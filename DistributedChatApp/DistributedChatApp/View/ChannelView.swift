@@ -34,3 +34,23 @@ struct ChannelView: View {
     }
 }
 
+struct ChatView_Previews: PreviewProvider {
+    static let controller = ChatController(transport: MockTransport())
+    static let alice = controller.me
+    static let bob = ChatUser(name: "Naveen")
+    @StateObject static var messages = Messages(messages: [
+        ChatMessage(author: alice, content: "Hello!"),
+        ChatMessage(author: bob, content: "Hi!"),
+        ChatMessage(author: bob, content: "This is fancy!"),
+    ])
+    @StateObject static var settings = Settings()
+    @StateObject static var network = Network(myId: controller.me.id, messages: messages)
+    @StateObject static var navigation = Navigation()
+    static var previews: some View {
+        ChannelView(channel: nil, controller: controller)
+            .environmentObject(messages)
+            .environmentObject(settings)
+            .environmentObject(network)
+            .environmentObject(navigation)
+    }
+}

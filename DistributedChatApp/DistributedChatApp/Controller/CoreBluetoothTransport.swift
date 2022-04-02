@@ -38,6 +38,7 @@ class CoreBluetoothTransport: NSObject, ChatTransport, CBPeripheralManagerDelega
     private var listeners = [(String) -> Void]()
     
     private let network: Network
+    private let settings: Settings
     private let profile: Profile
     
     private var subscriptions = [AnyCancellable]()
@@ -96,7 +97,8 @@ class CoreBluetoothTransport: NSObject, ChatTransport, CBPeripheralManagerDelega
         }
     }
     
-    required init(network: Network, profile: Profile) {
+    required init(settings: Settings, network: Network, profile: Profile) {
+        self.settings = settings
         self.network = network
         self.profile = profile
         
@@ -195,6 +197,28 @@ class CoreBluetoothTransport: NSObject, ChatTransport, CBPeripheralManagerDelega
         service.characteristics = [inboxCharacteristic, userNameCharacteristic, userIDCharacteristic]
         peripheralManager.add(service)
         
+        subscriptions.append(settings.$bluetooth.sink { [unowned self] in
+            if $0.advertisingEnabled {
+                startAdvertising()
+            } else {
+                stopAdvertising()
+            }
+            
+            timer?.cancel()
+            timer = nil
+            
+            if $0.monitorSignalStrength {
+                // Every five seconds, re-read the signal strengths of discovered (nearby) peripherals
+                timer = Timer.publish(every: TimeInterval($0.monitorSignalStrengthInterval), on: .main, in: .default)
+                    .autoconnect()
+                    .sink { [unowned self] _ in
+                        log.debug("Reading RSSIs")
+                        for (peripheral, state) in nearbyPeripherals where state.isConnected {
+                            peripheral.readRSSI()
+                        }
+                    }
+            }
+        })
     }
     
     private func startAdvertising() {
@@ -253,7 +277,18 @@ class CoreBluetoothTransport: NSObject, ChatTransport, CBPeripheralManagerDelega
             
             if !initializedCentral {
                 initializedCentral = true
-               
+                
+                if settings.bluetooth.scanningEnabled {
+                    startScanning()
+                }
+                
+                subscriptions.append(settings.$bluetooth.sink { [unowned self] in
+                    if $0.scanningEnabled {
+                        startScanning()
+                    } else {
+                        stopScanning()
+                    }
+                })
             }
         default:
             // TODO: Handle other states

@@ -34,7 +34,7 @@ extension Optional where Wrapped == ChatChannel {
     }
     
     private func name(of userId: UUID, with network: Network) -> String {
-        userId.uuidString
+        (network.presences[userId] ?? network.offlinePresences[userId])?.user.displayName ?? userId.uuidString
     }
     
     func displayName(with network: Network) -> String {

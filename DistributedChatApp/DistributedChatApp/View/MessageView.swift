@@ -15,6 +15,7 @@ struct MessageView: View {
     var onJumpToMessage: ((UUID) -> Void)? = nil
     
     @EnvironmentObject private var messages: Messages
+    @EnvironmentObject private var settings: Settings
     @EnvironmentObject private var navigation: Navigation
     
     var body: some View {
@@ -103,17 +104,36 @@ struct MessageView: View {
         }
         
         VStack {
-                let isMe = controller.me.id == message.author.id
-                HStack {
-                    if isMe { Spacer() }
-                    BubbleMessageView(message: message, isMe: isMe) { repliedToId in
-                        onJumpToMessage?(repliedToId)
-                    }
-                    .contextMenu { menuItems }
-                    if !isMe { Spacer() }
+            let isMe = controller.me.id == message.author.id
+            HStack {
+                if isMe { Spacer() }
+                BubbleMessageView(message: message, isMe: isMe) { repliedToId in
+                    onJumpToMessage?(repliedToId)
                 }
+                .contextMenu { menuItems }
+                if !isMe { Spacer() }
+            }
             
         }
     }
 }
 
+struct MessageView_Previews: PreviewProvider {
+    static let controller = ChatController(transport: MockTransport())
+    static let alice = controller.me
+    static let bob = ChatUser(name: "Fooja")
+    @StateObject static var messages = Messages(messages: [
+        ChatMessage(author: alice, content: "Hello!"),
+        ChatMessage(author: bob, content: "Hi!"),
+        ChatMessage(author: bob, content: "This is fancy!"),
+    ])
+    @StateObject static var settings = Settings()
+    @StateObject static var navigation = Navigation()
+    @State static var replyingToMessageId: UUID? = nil
+    static var previews: some View {
+        MessageView(message: messages.messages.values.first { $0.content == "Hello!" }!, controller: controller, replyingToMessageId: $replyingToMessageId)
+            .environmentObject(messages)
+            .environmentObject(settings)
+            .environmentObject(navigation)
+    }
+}

@@ -23,7 +23,7 @@ struct ContentView: View {
                         Text("Channels")
                     }
                 }
-            Text("NETWORK TAB")
+            NetworkView()
                 .tabItem {
                     VStack {
                         Image(systemName: "network")
@@ -37,7 +37,7 @@ struct ContentView: View {
                         Text("Profile")
                     }
                 }
-            Text("PROFILE TAB")
+            SettingsView()
                 .tabItem {
                     VStack {
                         Image(systemName: "gear")
@@ -49,3 +49,18 @@ struct ContentView: View {
     }
 }
 
+struct ContentView_Previews: PreviewProvider {
+    @StateObject static var settings = Settings()
+    @StateObject static var messages = Messages()
+    @StateObject static var navigation = Navigation()
+    @StateObject static var profile = Profile()
+    @StateObject static var network = Network(myId: profile.me.id, messages: messages)
+    static var previews: some View {
+        ContentView(controller: ChatController(transport: MockTransport()))
+            .environmentObject(settings)
+            .environmentObject(messages)
+            .environmentObject(navigation)
+            .environmentObject(network)
+            .environmentObject(profile)
+    }
+}

@@ -12,6 +12,7 @@ struct ChannelSnippetView: View {
     let channel: ChatChannel?
     
     @EnvironmentObject private var messages: Messages
+    @EnvironmentObject private var settings: Settings
     @EnvironmentObject private var network: Network
     
     var body: some View {
@@ -27,8 +28,12 @@ struct ChannelSnippetView: View {
             VStack(alignment: .leading) {
                 Text(channel.rawDisplayName(with: network))
                     .font(.headline)
-                
-                   
+                if let message = messages[channel].last,
+                   settings.presentation.showChannelPreviews {
+                    PlainMessageView(message: message)
+                        .font(.subheadline)
+                        .foregroundColor(.secondary)
+                }
             }
             if messages.pinnedChannels.contains(channel) {
                 Spacer()
@@ -38,3 +43,14 @@ struct ChannelSnippetView: View {
     }
 }
 
+struct ChannelSnippetView_Previews: PreviewProvider {
+    @StateObject static var messages = Messages()
+    @StateObject static var settings = Settings()
+    @StateObject static var network = Network(messages: messages)
+    static var previews: some View {
+        ChannelSnippetView(channel: .room("test"))
+            .environmentObject(messages)
+            .environmentObject(settings)
+            .environmentObject(network)
+    }
+}

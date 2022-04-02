@@ -6,7 +6,7 @@
 //
 
 extension Sequence where Element: Hashable {
-    /// Filters only distinct elements.
+    
     var distinct: [Element] {
         var found = Set<Element>()
         var xs = [Element]()

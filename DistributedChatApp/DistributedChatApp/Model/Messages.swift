@@ -10,7 +10,7 @@ import DistributedChat
 import Foundation
 import Logging
 
-fileprivate let log = Logger(label: "DistributedChatApp.Messages")
+fileprivate let log = Logger(label: "CliffApp.Messages")
 
 class Messages: ObservableObject {
     @Published var autoReadChannels: Set<ChatChannel?> = []

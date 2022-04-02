@@ -4,11 +4,12 @@
 //
 //  Created by NAVEEN MADHAN on 4/1/22.
 //
+
 import DistributedChat
 import Foundation
 import Logging
 
-fileprivate let log = Logger(label: "DistributedChatApp.DataUtils")
+fileprivate let log = Logger(label: "CliffApp.DataUtils")
 
 enum ChatAttachmentExtractionError: Error {
     case cannotExtractEncryptedData

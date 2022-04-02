@@ -12,7 +12,7 @@ import Logging
 
 private let encoder = makeJSONEncoder()
 private let decoder = makeJSONDecoder()
-private let log = Logger(label: "DistributedChatApp.PersistenceUtils")
+private let log = Logger(label: "CliffApp.PersistenceUtils")
 private let persistenceEnabled = !isRunningInSwiftUIPreview()
 private var subscriptions = [String: AnyCancellable]()
 
