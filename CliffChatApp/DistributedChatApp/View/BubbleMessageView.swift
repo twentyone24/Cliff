@@ -65,7 +65,9 @@ struct BubbleMessageView: View {
                             Color(red: 0.9, green: 0.9, blue: 0.9)
                         ]), startPoint: .top, endPoint: .bottom)
                 )
-                .cornerRadius(10)
+                // .cornerRadius(10)
+                .clipShape(ChatBubble(isMe: isMe))
+                .contentShape(ChatBubble(isMe: isMe))
             }
         }
     }
@@ -89,3 +91,4 @@ struct BubbleMessageView_Previews: PreviewProvider {
         .environmentObject(messages)
     }
 }
+

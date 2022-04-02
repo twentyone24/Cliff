@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6712AE0D27F83BAE00E3192C /* CliffTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6712AE0C27F83BAE00E3192C /* CliffTextView.swift */; };
+		6712AE0E27F83BAE00E3192C /* CliffTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6712AE0C27F83BAE00E3192C /* CliffTextView.swift */; };
+		6712AE1027F8446900E3192C /* ChatBubbleShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6712AE0F27F8446900E3192C /* ChatBubbleShape.swift */; };
+		6712AE1127F8446900E3192C /* ChatBubbleShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6712AE0F27F8446900E3192C /* ChatBubbleShape.swift */; };
 		67D416D227F7894A00D25951 /* VoiceNoteRecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D416B127F7894700D25951 /* VoiceNoteRecordButton.swift */; };
 		67D416D327F7894A00D25951 /* VoiceNoteRecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D416B127F7894700D25951 /* VoiceNoteRecordButton.swift */; };
 		67D416D427F7894A00D25951 /* PresenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D416B227F7894700D25951 /* PresenceView.swift */; };
@@ -99,8 +103,6 @@
 		67D4174527F789AF00D25951 /* PersistenceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D4173827F789AF00D25951 /* PersistenceError.swift */; };
 		67D4174627F789AF00D25951 /* URLUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D4173927F789AF00D25951 /* URLUtils.swift */; };
 		67D4174727F789AF00D25951 /* URLUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D4173927F789AF00D25951 /* URLUtils.swift */; };
-		67D4174D27F82E2C00D25951 /* SFSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D4174C27F82E2C00D25951 /* SFSymbol.swift */; };
-		67D4174E27F82E2C00D25951 /* SFSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D4174C27F82E2C00D25951 /* SFSymbol.swift */; };
 		67D4175027F830B900D25951 /* PickerEnumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D4174F27F830B900D25951 /* PickerEnumView.swift */; };
 		67D4175127F830B900D25951 /* PickerEnumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D4174F27F830B900D25951 /* PickerEnumView.swift */; };
 		C7734D4B25BDF52C0057DF96 /* LoggingOSLog in Frameworks */ = {isa = PBXBuildFile; productRef = C7734D4A25BDF52C0057DF96 /* LoggingOSLog */; };
@@ -154,6 +156,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6712AE0C27F83BAE00E3192C /* CliffTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CliffTextView.swift; sourceTree = "<group>"; };
+		6712AE0F27F8446900E3192C /* ChatBubbleShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubbleShape.swift; sourceTree = "<group>"; };
 		67D416B127F7894700D25951 /* VoiceNoteRecordButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceNoteRecordButton.swift; sourceTree = "<group>"; };
 		67D416B227F7894700D25951 /* PresenceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenceView.swift; sourceTree = "<group>"; };
 		67D416B327F7894700D25951 /* MessageHistoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageHistoryView.swift; sourceTree = "<group>"; };
@@ -200,7 +204,6 @@
 		67D4173727F789AF00D25951 /* DataUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataUtils.swift; sourceTree = "<group>"; };
 		67D4173827F789AF00D25951 /* PersistenceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceError.swift; sourceTree = "<group>"; };
 		67D4173927F789AF00D25951 /* URLUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLUtils.swift; sourceTree = "<group>"; };
-		67D4174C27F82E2C00D25951 /* SFSymbol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFSymbol.swift; sourceTree = "<group>"; };
 		67D4174F27F830B900D25951 /* PickerEnumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerEnumView.swift; sourceTree = "<group>"; };
 		C7982CC425BB851F000DC0F1 /* DistributedChatMacApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DistributedChatMacApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7982CCA25BB8521000DC0F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -291,7 +294,6 @@
 		67D4174B27F82E0600D25951 /* Shared Views */ = {
 			isa = PBXGroup;
 			children = (
-				67D4174C27F82E2C00D25951 /* SFSymbol.swift */,
 				67D4174F27F830B900D25951 /* PickerEnumView.swift */,
 				67D416C427F7894800D25951 /* ImagePicker.swift */,
 				67D416CF27F7894900D25951 /* UIViewControllerRepresentable.swift */,
@@ -301,6 +303,8 @@
 				67D416CD27F7894900D25951 /* ChatStatus+Color.swift */,
 				67D416C827F7894900D25951 /* WaveformView.swift */,
 				67D416B127F7894700D25951 /* VoiceNoteRecordButton.swift */,
+				6712AE0C27F83BAE00E3192C /* CliffTextView.swift */,
+				6712AE0F27F8446900E3192C /* ChatBubbleShape.swift */,
 			);
 			path = "Shared Views";
 			sourceTree = "<group>";
@@ -401,15 +405,15 @@
 				67D416CB27F7894900D25951 /* BubbleMessageView.swift */,
 				67D416C127F7894800D25951 /* FileAttachmentView.swift */,
 				67D416BC27F7894800D25951 /* ImageAttachmentView.swift */,
-				67D416BD27F7894800D25951 /* NetworkView.swift */,
 				67D416B427F7894700D25951 /* PlainMessageView.swift */,
 				67D416B227F7894700D25951 /* PresenceView.swift */,
-				67D416C727F7894900D25951 /* ProfileView.swift */,
 				67D416B727F7894700D25951 /* QuickLookAttachment.swift */,
 				67D416B827F7894700D25951 /* QuickLookAttachmentView.swift */,
 				67D416B927F7894700D25951 /* QuickLookView.swift */,
-				67D416BA27F7894700D25951 /* SettingsView.swift */,
 				67D416D127F7894900D25951 /* VoiceNoteAttachmentView.swift */,
+				67D416BA27F7894700D25951 /* SettingsView.swift */,
+				67D416BD27F7894800D25951 /* NetworkView.swift */,
+				67D416C727F7894900D25951 /* ProfileView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -745,9 +749,9 @@
 				67D4170127F7894A00D25951 /* WaveformView.swift in Sources */,
 				67D4175127F830B900D25951 /* PickerEnumView.swift in Sources */,
 				67D4170D27F7894A00D25951 /* MessageView.swift in Sources */,
-				67D4174E27F82E2C00D25951 /* SFSymbol.swift in Sources */,
 				67D416FD27F7894A00D25951 /* ClosableStatusBar.swift in Sources */,
 				67D4170327F7894A00D25951 /* ChannelsView.swift in Sources */,
+				6712AE1127F8446900E3192C /* ChatBubbleShape.swift in Sources */,
 				67D416E927F7894A00D25951 /* ImageAttachmentView.swift in Sources */,
 				67D4174527F789AF00D25951 /* PersistenceError.swift in Sources */,
 				67D4171A27F7897B00D25951 /* AudioPlayer.swift in Sources */,
@@ -768,6 +772,7 @@
 				67D416D927F7894A00D25951 /* PlainMessageView.swift in Sources */,
 				67D4174727F789AF00D25951 /* URLUtils.swift in Sources */,
 				67D416D327F7894A00D25951 /* VoiceNoteRecordButton.swift in Sources */,
+				6712AE0E27F83BAE00E3192C /* CliffTextView.swift in Sources */,
 				67D416F327F7894A00D25951 /* FileAttachmentView.swift in Sources */,
 				67D4172C27F7899600D25951 /* NearbyUser.swift in Sources */,
 				67D416E527F7894A00D25951 /* SettingsView.swift in Sources */,
@@ -818,9 +823,9 @@
 				67D4170027F7894A00D25951 /* WaveformView.swift in Sources */,
 				67D4175027F830B900D25951 /* PickerEnumView.swift in Sources */,
 				67D4170C27F7894A00D25951 /* MessageView.swift in Sources */,
-				67D4174D27F82E2C00D25951 /* SFSymbol.swift in Sources */,
 				67D416FC27F7894A00D25951 /* ClosableStatusBar.swift in Sources */,
 				67D4170227F7894A00D25951 /* ChannelsView.swift in Sources */,
+				6712AE1027F8446900E3192C /* ChatBubbleShape.swift in Sources */,
 				67D416E827F7894A00D25951 /* ImageAttachmentView.swift in Sources */,
 				67D4174427F789AF00D25951 /* PersistenceError.swift in Sources */,
 				67D4171927F7897B00D25951 /* AudioPlayer.swift in Sources */,
@@ -841,6 +846,7 @@
 				67D416D827F7894A00D25951 /* PlainMessageView.swift in Sources */,
 				67D4174627F789AF00D25951 /* URLUtils.swift in Sources */,
 				67D416D227F7894A00D25951 /* VoiceNoteRecordButton.swift in Sources */,
+				6712AE0D27F83BAE00E3192C /* CliffTextView.swift in Sources */,
 				67D416F227F7894A00D25951 /* FileAttachmentView.swift in Sources */,
 				67D4172B27F7899600D25951 /* NearbyUser.swift in Sources */,
 				67D416E427F7894A00D25951 /* SettingsView.swift in Sources */,

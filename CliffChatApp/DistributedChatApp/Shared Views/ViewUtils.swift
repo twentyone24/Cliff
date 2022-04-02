@@ -8,7 +8,7 @@
 import SwiftUI
 import DistributedChat
 
-let iconSize: CGFloat = 22
+let iconSize: CGFloat = 24
 
 fileprivate let globalChannelName = "global"
 
