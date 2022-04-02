@@ -1,0 +1,52 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "FDWaveformView",
+        "repositoryURL": "https://github.com/fulldecent/FDWaveformView.git",
+        "state": {
+          "branch": null,
+          "revision": "8ddf6107d54dccb3892f0a1aa70d5431d61d75f6",
+          "version": "5.0.1"
+        }
+      },
+      {
+        "package": "swift-crypto",
+        "repositoryURL": "https://github.com/apple/swift-crypto.git",
+        "state": {
+          "branch": null,
+          "revision": "ddb07e896a2a8af79512543b1c7eb9797f8898a5",
+          "version": "1.1.7"
+        }
+      },
+      {
+        "package": "swift-log",
+        "repositoryURL": "https://github.com/apple/swift-log.git",
+        "state": {
+          "branch": null,
+          "revision": "173f567a2dfec11d74588eea82cecea555bdc0bc",
+          "version": "1.4.0"
+        }
+      },
+      {
+        "package": "LoggingOSLog",
+        "repositoryURL": "https://github.com/chrisaljoudi/swift-log-oslog.git",
+        "state": {
+          "branch": null,
+          "revision": "176d41d46429e79c806333025b226e0c50a0c602",
+          "version": "0.2.2"
+        }
+      },
+      {
+        "package": "SwiftUIKit",
+        "repositoryURL": "https://github.com/youjinp/SwiftUIKit.git",
+        "state": {
+          "branch": null,
+          "revision": "c4babb929dcb899a3939f093f6f63d1694932949",
+          "version": "0.0.14"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

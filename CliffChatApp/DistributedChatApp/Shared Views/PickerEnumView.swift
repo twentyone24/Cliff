@@ -1,0 +1,32 @@
+//
+//  PickerEnumView.swift
+//  CliffApp
+//
+//  Created by NAVEEN MADHAN on 4/2/22.
+//
+
+import Foundation
+import SwiftUI
+
+public struct EnumPicker<L, T>: View
+    where
+        L: View,
+        T: CaseIterable & CustomStringConvertible & Hashable,
+        T.AllCases: RandomAccessCollection,
+        T.AllCases.Index == Int {
+    @Binding private var selection: T
+    private let label: L
+    
+    public init(selection: Binding<T>, label: L) {
+        self._selection = selection
+        self.label = label
+    }
+    
+    public var body: some View {
+        Picker(selection: $selection, label: label) {
+            ForEach(0..<T.allCases.count) {
+                Text(T.allCases[$0].description).tag(T.allCases[$0])
+            }
+        }
+    }
+}
