@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6708E45D2803F76B00C5FECF /* VoiceNoteAttachmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6708E45C2803F76B00C5FECF /* VoiceNoteAttachmentView.swift */; };
+		6708E45E2803F76B00C5FECF /* VoiceNoteAttachmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6708E45C2803F76B00C5FECF /* VoiceNoteAttachmentView.swift */; };
 		6712AE0D27F83BAE00E3192C /* CliffTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6712AE0C27F83BAE00E3192C /* CliffTextView.swift */; };
 		6712AE0E27F83BAE00E3192C /* CliffTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6712AE0C27F83BAE00E3192C /* CliffTextView.swift */; };
 		6712AE1027F8446900E3192C /* ChatBubbleShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6712AE0F27F8446900E3192C /* ChatBubbleShape.swift */; };
@@ -69,8 +71,6 @@
 		67D4170F27F7894A00D25951 /* UIViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D416CF27F7894900D25951 /* UIViewControllerRepresentable.swift */; };
 		67D4171027F7894A00D25951 /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D416D027F7894900D25951 /* ViewUtils.swift */; };
 		67D4171127F7894A00D25951 /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D416D027F7894900D25951 /* ViewUtils.swift */; };
-		67D4171227F7894A00D25951 /* VoiceNoteAttachmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D416D127F7894900D25951 /* VoiceNoteAttachmentView.swift */; };
-		67D4171327F7894A00D25951 /* VoiceNoteAttachmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D416D127F7894900D25951 /* VoiceNoteAttachmentView.swift */; };
 		67D4171727F7897B00D25951 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D4171527F7897B00D25951 /* AudioRecorder.swift */; };
 		67D4171827F7897B00D25951 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D4171527F7897B00D25951 /* AudioRecorder.swift */; };
 		67D4171927F7897B00D25951 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D4171627F7897B00D25951 /* AudioPlayer.swift */; };
@@ -156,6 +156,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6708E45C2803F76B00C5FECF /* VoiceNoteAttachmentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VoiceNoteAttachmentView.swift; path = "../../../../../GitHub/distributed-chat-main/DistributedChatApp/DistributedChatApp/View/VoiceNoteAttachmentView.swift"; sourceTree = "<group>"; };
 		6712AE0C27F83BAE00E3192C /* CliffTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CliffTextView.swift; sourceTree = "<group>"; };
 		6712AE0F27F8446900E3192C /* ChatBubbleShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubbleShape.swift; sourceTree = "<group>"; };
 		67D416B127F7894700D25951 /* VoiceNoteRecordButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceNoteRecordButton.swift; sourceTree = "<group>"; };
@@ -187,7 +188,6 @@
 		67D416CE27F7894900D25951 /* MessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		67D416CF27F7894900D25951 /* UIViewControllerRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerRepresentable.swift; sourceTree = "<group>"; };
 		67D416D027F7894900D25951 /* ViewUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
-		67D416D127F7894900D25951 /* VoiceNoteAttachmentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VoiceNoteAttachmentView.swift; path = ../../../../Cliff/Cliff/Views/VoiceNoteAttachmentView.swift; sourceTree = "<group>"; };
 		67D4171527F7897B00D25951 /* AudioRecorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
 		67D4171627F7897B00D25951 /* AudioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		67D4171B27F7898C00D25951 /* Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
@@ -409,8 +409,8 @@
 				67D416B227F7894700D25951 /* PresenceView.swift */,
 				67D416B727F7894700D25951 /* QuickLookAttachment.swift */,
 				67D416B827F7894700D25951 /* QuickLookAttachmentView.swift */,
+				6708E45C2803F76B00C5FECF /* VoiceNoteAttachmentView.swift */,
 				67D416B927F7894700D25951 /* QuickLookView.swift */,
-				67D416D127F7894900D25951 /* VoiceNoteAttachmentView.swift */,
 				67D416BA27F7894700D25951 /* SettingsView.swift */,
 				67D416BD27F7894800D25951 /* NetworkView.swift */,
 				67D416C727F7894900D25951 /* ProfileView.swift */,
@@ -738,6 +738,7 @@
 				67D416F727F7894A00D25951 /* ContentView.swift in Sources */,
 				67D4170B27F7894A00D25951 /* ChatStatus+Color.swift in Sources */,
 				67D4173227F7899600D25951 /* Network.swift in Sources */,
+				6708E45E2803F76B00C5FECF /* VoiceNoteAttachmentView.swift in Sources */,
 				C7982D0225BB8581000DC0F1 /* CliffApp.swift in Sources */,
 				67D4173F27F789AF00D25951 /* PersistenceUtils.swift in Sources */,
 				67D416DB27F7894A00D25951 /* ChannelSnippetView.swift in Sources */,
@@ -781,7 +782,6 @@
 				C7982D0925BB8587000DC0F1 /* CoreBluetoothTransport.swift in Sources */,
 				67D4173027F7899600D25951 /* Profile.swift in Sources */,
 				67D4174327F789AF00D25951 /* DataUtils.swift in Sources */,
-				67D4171327F7894A00D25951 /* VoiceNoteAttachmentView.swift in Sources */,
 				67D4173D27F789AF00D25951 /* StringUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -812,6 +812,7 @@
 				67D416F627F7894A00D25951 /* ContentView.swift in Sources */,
 				67D4170A27F7894A00D25951 /* ChatStatus+Color.swift in Sources */,
 				67D4173127F7899600D25951 /* Network.swift in Sources */,
+				6708E45D2803F76B00C5FECF /* VoiceNoteAttachmentView.swift in Sources */,
 				C7AFC9B325BB52D500AF9526 /* CoreBluetoothTransport.swift in Sources */,
 				67D4173E27F789AF00D25951 /* PersistenceUtils.swift in Sources */,
 				67D416DA27F7894A00D25951 /* ChannelSnippetView.swift in Sources */,
@@ -855,7 +856,6 @@
 				C7BC335225B3C00700989E95 /* CliffApp.swift in Sources */,
 				67D4172F27F7899600D25951 /* Profile.swift in Sources */,
 				67D4174227F789AF00D25951 /* DataUtils.swift in Sources */,
-				67D4171227F7894A00D25951 /* VoiceNoteAttachmentView.swift in Sources */,
 				67D4173C27F789AF00D25951 /* StringUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
