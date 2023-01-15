@@ -1,8 +1,8 @@
 //
 //  AudioPlayer.swift
-//  DistributedChatApp
+//  Cliff
 //
-//  Created by Fredrik on 1/30/21.
+//  Created by NAVEEN MADHAN on 4/1/22.
 //
 
 import AVFoundation
@@ -10,7 +10,7 @@ import Combine
 import Logging
 import Foundation
 
-fileprivate let log = Logger(label: "DistributedChatApp.AudioPlayer")
+fileprivate let log = Logger(label: "CliffApp.AudioPlayer")
 
 class AudioPlayer: NSObject, ObservableObject, AVAudioPlayerDelegate {
     private var player: AVAudioPlayer? = nil {

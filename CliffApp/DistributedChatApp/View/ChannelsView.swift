@@ -1,8 +1,8 @@
 //
 //  ChannelsView.swift
-//  DistributedChatApp
+//  Cliff
 //
-//  Created by Fredrik on 1/22/21.
+//  Created by NAVEEN MADHAN on 4/1/22.
 //
 
 import DistributedChat
@@ -34,7 +34,7 @@ struct ChannelsView: View {
                     Image(systemName: "antenna.radiowaves.left.and.right")
                     Text("\(reachableCount) \("user".pluralized(with: reachableCount)) reachable, \(nearbyCount) \("user".pluralized(with: nearbyCount)) nearby")
                 }
-                ForEach(allChannels, id: \.self) { channel in
+              ForEach(allChannels, id: \.self) { channel in
                     NavigationLink(destination: ChannelView(channel: channel, controller: controller), tag: channel, selection: $navigation.activeChannel) {
                         ChannelSnippetView(channel: channel)
                     }

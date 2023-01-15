@@ -1,8 +1,8 @@
 //
 //  AudioRecorder.swift
-//  DistributedChatApp
+//  Cliff
 //
-//  Created by Fredrik on 1/30/21.
+//  Created by NAVEEN MADHAN on 4/1/22.
 //
 
 import AVFoundation
@@ -10,7 +10,7 @@ import Foundation
 import Combine
 import Logging
 
-fileprivate let log = Logger(label: "DistributedChatApp.AudioRecorder")
+fileprivate let log = Logger(label: "CliffApp.AudioRecorder")
 
 /// An audio recorder that writes to a custom file in Recordings.
 class AudioRecorder: NSObject, ObservableObject, AVAudioRecorderDelegate {

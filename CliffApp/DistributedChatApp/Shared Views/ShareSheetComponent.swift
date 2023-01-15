@@ -1,15 +1,16 @@
 //
 //  ShareSheet.swift
-//  DistributedChatApp
+//  Cliff
 //
-//  Created by Fredrik on 2/1/21.
+//  Created by NAVEEN MADHAN on 4/1/22.
 //
+
 
 import SwiftUI
 import UIKit
 import Logging
 
-fileprivate let log = Logger(label: "DistributedChatApp.ShareSheet")
+fileprivate let log = Logger(label: "CliffApp.ShareSheet")
 
 struct ShareSheet: SimpleUIViewControllerRepresentable {
     let items: [Any]

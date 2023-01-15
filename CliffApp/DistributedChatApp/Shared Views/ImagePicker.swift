@@ -1,15 +1,14 @@
 //
 //  ImagePicker.swift
-//  DistributedChatApp
+//  Cliff
 //
-//  Created by Fredrik on 2/1/21.
+//  Created by NAVEEN MADHAN on 4/1/22.
 //
-
 import SwiftUI
 import UIKit
 import Logging
 
-fileprivate let log = Logger(label: "DistributedChatApp.ImagePicker")
+fileprivate let log = Logger(label: "CliffApp.ImagePicker")
 
 struct ImagePicker: SimpleUIViewControllerRepresentable {
     let sourceType: SourceType

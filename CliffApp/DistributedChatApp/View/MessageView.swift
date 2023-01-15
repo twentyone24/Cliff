@@ -1,8 +1,8 @@
 //
 //  MessageView.swift
-//  DistributedChatApp
+//  Cliff
 //
-//  Created by Fredrik on 2/1/21.
+//  Created by NAVEEN MADHAN on 4/1/22.
 //
 
 import DistributedChat
@@ -104,21 +104,16 @@ struct MessageView: View {
         }
         
         VStack {
-            switch settings.presentation.messageHistoryStyle {
-            case .compact:
-                CompactMessageView(message: message)
-                    .contextMenu { menuItems }
-            case .bubbles:
-                let isMe = controller.me.id == message.author.id
-                HStack {
-                    if isMe { Spacer() }
-                    BubbleMessageView(message: message, isMe: isMe) { repliedToId in
-                        onJumpToMessage?(repliedToId)
-                    }
-                    .contextMenu { menuItems }
-                    if !isMe { Spacer() }
+            let isMe = controller.me.id == message.author.id
+            HStack {
+                if isMe { Spacer() }
+                BubbleMessageView(message: message, isMe: isMe) { repliedToId in
+                    onJumpToMessage?(repliedToId)
                 }
+                .contextMenu { menuItems }
+                if !isMe { Spacer() }
             }
+            
         }
     }
 }
@@ -126,7 +121,7 @@ struct MessageView: View {
 struct MessageView_Previews: PreviewProvider {
     static let controller = ChatController(transport: MockTransport())
     static let alice = controller.me
-    static let bob = ChatUser(name: "Bob")
+    static let bob = ChatUser(name: "Fooja")
     @StateObject static var messages = Messages(messages: [
         ChatMessage(author: alice, content: "Hello!"),
         ChatMessage(author: bob, content: "Hi!"),

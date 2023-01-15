@@ -1,8 +1,8 @@
 //
 //  ChannelView.swift
-//  DistributedChatApp
+//  Cliff
 //
-//  Created by Fredrik on 1/22/21.
+//  Created by NAVEEN MADHAN on 4/1/22.
 //
 
 import DistributedChat
@@ -37,7 +37,7 @@ struct ChannelView: View {
 struct ChatView_Previews: PreviewProvider {
     static let controller = ChatController(transport: MockTransport())
     static let alice = controller.me
-    static let bob = ChatUser(name: "Bob")
+    static let bob = ChatUser(name: "Naveen")
     @StateObject static var messages = Messages(messages: [
         ChatMessage(author: alice, content: "Hello!"),
         ChatMessage(author: bob, content: "Hi!"),

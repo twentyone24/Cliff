@@ -1,8 +1,8 @@
 //
 //  MessageComposeView.swift
-//  DistributedChatApp
+//  Cliff
 //
-//  Created by Fredrik on 1/24/21.
+//  Created by NAVEEN MADHAN on 4/1/22.
 //
 
 import DistributedChat
@@ -10,7 +10,7 @@ import Contacts
 import Logging
 import SwiftUI
 
-fileprivate let log = Logger(label: "DistributedChatApp.MessageComposeView")
+fileprivate let log = Logger(label: "CliffApp.MessageComposeView")
 
 /// The compression algorithm used for encoding.
 fileprivate let compression: ChatAttachment.Compression = .lzfse
@@ -26,7 +26,7 @@ struct MessageComposeView: View {
     @State private var draftAttachments: [DraftAttachment] = []
     @State private var attachmentActionSheetShown: Bool = false
     @State private var attachmentFilePickerShown: Bool = false
-    @State private var attachmentContactPickerShown: Bool = false
+//    @State private var attachmentContactPickerShown: Bool = false
     @State private var attachmentImagePickerShown: Bool = false
     @State private var attachmentImagePickerStyle: ImagePicker.SourceType = .photoLibrary
     
@@ -102,7 +102,6 @@ struct MessageComposeView: View {
     
     var body: some View {
         ZStack {
-            // Dummy view for presenting the contacts UI, see SwiftUIKit
 //            ContactPicker(showPicker: $attachmentContactPickerShown) {
 //                draftAttachments.append(.contact($0))
 //            }
@@ -129,9 +128,10 @@ struct MessageComposeView: View {
                 }
                 HStack {
                     Button(action: { attachmentActionSheetShown = true }) {
-                        Image(systemName: "plus")
+                        Image(systemName: "paperclip.circle.fill")
                             .font(.system(size: iconSize))
                     }
+                        
                     TextField("Message \(channel.displayName(with: network))...", text: $draft, onCommit: sendDraft)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                     if draft.isEmpty && draftAttachments.isEmpty {
@@ -141,8 +141,8 @@ struct MessageComposeView: View {
                         .font(.system(size: iconSize))
                     } else {
                         Button(action: sendDraft) {
-                            Text("Send")
-                                .fontWeight(.bold)
+                            Image(systemName: "paperplane.circle.fill")
+                                .font(.system(size: iconSize))
                         }
                     }
                 }
@@ -158,12 +158,6 @@ struct MessageComposeView: View {
                         .default(Text("Camera")) {
                             attachmentImagePickerStyle = .camera
                             attachmentImagePickerShown = true
-                        },
-                        .default(Text("Contact")) {
-                            attachmentContactPickerShown = true
-                        },
-                        .default(Text("File")) {
-                            attachmentFilePickerShown = true
                         },
                         .cancel {
                             // TODO: Workaround for attachmentFilePickerShown
@@ -190,6 +184,7 @@ struct MessageComposeView: View {
             }
         }
     }
+    
     
     private func sendDraft() {
         if !draft.isEmpty || !draftAttachments.isEmpty {
@@ -221,3 +216,7 @@ struct MessageComposeView_Previews: PreviewProvider {
             .environmentObject(network)
     }
 }
+
+
+
+

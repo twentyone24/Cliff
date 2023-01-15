@@ -1,8 +1,8 @@
 //
 //  BubbleMessageView.swift
-//  DistributedChatApp
+//  Cliff
 //
-//  Created by Fredrik on 1/23/21.
+//  Created by NAVEEN MADHAN on 4/1/22.
 //
 
 import DistributedChat
@@ -65,16 +65,18 @@ struct BubbleMessageView: View {
                             Color(red: 0.9, green: 0.9, blue: 0.9)
                         ]), startPoint: .top, endPoint: .bottom)
                 )
-                .cornerRadius(10)
+                // .cornerRadius(10)
+                .clipShape(ChatBubble(isMe: isMe))
+                .contentShape(ChatBubble(isMe: isMe))
             }
         }
     }
 }
 
 struct BubbleMessageView_Previews: PreviewProvider {
-    static let message1 = ChatMessage(author: ChatUser(name: "Alice"), content: "Hi!")
-    static let message2 = ChatMessage(author: ChatUser(name: "Bob"), content: "This is a long\nmultiline message!", repliedToMessageId: message1.id, wasEncrypted: true)
-    static let message3 = ChatMessage(author: ChatUser(name: "Charles"), content: .encrypted(ChatCryptoCipherData(sealed: Data(), signature: Data(), ephemeralPublicKey: Data())), repliedToMessageId: message1.id)
+    static let message1 = ChatMessage(author: ChatUser(name: "Fithish"), content: "Hi!")
+    static let message2 = ChatMessage(author: ChatUser(name: "Shine"), content: "This is a long\nmultiline message!", repliedToMessageId: message1.id, wasEncrypted: true)
+    static let message3 = ChatMessage(author: ChatUser(name: "Parthi"), content: .encrypted(ChatCryptoCipherData(sealed: Data(), signature: Data(), ephemeralPublicKey: Data())), repliedToMessageId: message1.id)
     @StateObject static var messages = Messages(messages: [
         message1,
         message2,
@@ -89,3 +91,4 @@ struct BubbleMessageView_Previews: PreviewProvider {
         .environmentObject(messages)
     }
 }
+

@@ -1,17 +1,15 @@
 //
 //  ViewUtils.swift
-//  DistributedChatApp
+//  Cliff
 //
-//  Created by Fredrik on 1/23/21.
+//  Created by NAVEEN MADHAN on 4/1/22.
 //
 
 import SwiftUI
 import DistributedChat
 
-/// The size of icons e.g. in the compose bar
-let iconSize: CGFloat = 22
+let iconSize: CGFloat = 24
 
-/// The displayed name of the 'global' channel, internally represented with nil
 fileprivate let globalChannelName = "global"
 
 extension Optional where Wrapped == ChatChannel {

@@ -1,8 +1,8 @@
 //
 //  SettingsView.swift
-//  DistributedChatApp
+//  Cliff
 //
-//  Created by Fredrik on 1/23/21.
+//  Created by NAVEEN MADHAN on 4/1/22.
 //
 
 import SwiftUI
@@ -14,8 +14,6 @@ struct SettingsView: View {
         NavigationView {
             Form {
                 Section(header: Text("Presentation")) {
-                    EnumPicker(selection: $settings.presentation.messageHistoryStyle, label: Text("Message History Style"))
-                        .pickerStyle(SegmentedPickerStyle())
                     Toggle(isOn: $settings.presentation.showChannelPreviews) {
                         Text("Show Channel Previews")
                     }

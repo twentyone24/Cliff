@@ -1,12 +1,12 @@
 //
 //  CollectionUtils.swift
-//  DistributedChatApp
+//  Cliff
 //
-//  Created by Fredrik on 1/24/21.
+//  Created by NAVEEN MADHAN on 4/1/22.
 //
 
 extension Sequence where Element: Hashable {
-    /// Filters only distinct elements.
+    
     var distinct: [Element] {
         var found = Set<Element>()
         var xs = [Element]()

@@ -1,8 +1,8 @@
 //
 //  PersistenceUtils.swift
-//  DistributedChatApp
+//  Cliff
 //
-//  Created by Fredrik on 1/24/21.
+//  Created by NAVEEN MADHAN on 4/1/22.
 //
 
 import DistributedChat
@@ -12,7 +12,7 @@ import Logging
 
 private let encoder = makeJSONEncoder()
 private let decoder = makeJSONDecoder()
-private let log = Logger(label: "DistributedChatApp.PersistenceUtils")
+private let log = Logger(label: "CliffApp.PersistenceUtils")
 private let persistenceEnabled = !isRunningInSwiftUIPreview()
 private var subscriptions = [String: AnyCancellable]()
 

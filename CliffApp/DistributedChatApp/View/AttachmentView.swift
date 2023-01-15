@@ -1,8 +1,8 @@
 //
 //  AttachmentView.swift
-//  DistributedChatApp
+//  Cliff
 //
-//  Created by Fredrik on 1/24/21.
+//  Created by NAVEEN MADHAN on 4/1/22.
 //
 
 import DistributedChat
@@ -18,8 +18,6 @@ struct AttachmentView: View {
             VoiceNoteAttachmentView(attachment: attachment, color: voiceNoteColor)
         case .image:
             ImageAttachmentView(attachment: attachment)
-        case .contact:
-            ContactAttachmentView(attachment: attachment)
         default:
             FileAttachmentView(attachment: attachment)
         }

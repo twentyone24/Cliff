@@ -1,8 +1,8 @@
 //
 //  Settings.swift
-//  DistributedChatApp
+//  Cliff
 //
-//  Created by Fredrik on 1/23/21.
+//  Created by NAVEEN MADHAN on 4/1/22.
 //
 
 import Combine
@@ -13,7 +13,7 @@ class Settings: ObservableObject {
     @Published(persistingTo: "Settings/bluetooth.json") var bluetooth = Bluetooth()
     
     struct Presentation: Codable {
-        var messageHistoryStyle: MessageHistoryStyle = .bubbles
+        // TODO: var messageHistoryStyle: MessageHistoryStyle = .bubbles
         var showChannelPreviews: Bool = true
     }
     

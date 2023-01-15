@@ -1,8 +1,8 @@
 //
 //  MessageHistoryView.swift
-//  DistributedChatApp
+//  Cliff
 //
-//  Created by Fredrik on 1/24/21.
+//  Created by NAVEEN MADHAN on 4/1/22.
 //
 
 import DistributedChat
@@ -27,7 +27,7 @@ struct MessageHistoryView: View {
                         }
                     }
                 }
-                .frame( // Ensure that the VStack actually fills the parent's width
+                .frame( 
                     minWidth: 0,
                     maxWidth: .infinity,
                     minHeight: 0,
@@ -52,7 +52,7 @@ struct MessageHistoryView: View {
 struct MessageHistoryView_Previews: PreviewProvider {
     static let controller = ChatController(transport: MockTransport())
     static let alice = controller.me
-    static let bob = ChatUser(name: "Bob")
+    static let bob = ChatUser(name: "Fithul")
     @StateObject static var messages = Messages(messages: [
         ChatMessage(author: alice, content: "Hello!"),
         ChatMessage(author: bob, content: "Hi!"),

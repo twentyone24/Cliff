@@ -32,9 +32,9 @@
         "package": "LoggingOSLog",
         "repositoryURL": "https://github.com/chrisaljoudi/swift-log-oslog.git",
         "state": {
-          "branch": null,
-          "revision": "176d41d46429e79c806333025b226e0c50a0c602",
-          "version": "0.2.2"
+          "branch": "master",
+          "revision": "1b2cb12c3ec2cdc171e1673a488dec1d40a69158",
+          "version": null
         }
       }
     ]

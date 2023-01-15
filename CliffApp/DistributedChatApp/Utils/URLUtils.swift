@@ -1,8 +1,8 @@
 //
 //  URLUtils.swift
-//  DistributedChatApp
+//  Cliff
 //
-//  Created by Fredrik on 1/24/21.
+//  Created by NAVEEN MADHAN on 4/1/22.
 //
 
 import Foundation
@@ -18,10 +18,11 @@ extension URL {
     }
     
     var isDistributedChatSchemed: Bool {
-        scheme == "distributedchat"
+        scheme == "cliffapp"
     }
+    
     var distributedChatAttachmentURL: URL? {
-        // distributedchat:///attachment/a/b.txt refers to <Documents>/Attachments/a/b.txt
+        // CliffApp:///attachment/a/b.txt refers to <Documents>/Attachments/a/b.txt
         
         if isDistributedChatSchemed && pathComponents[..<2] == ["/", "attachment"] {
             return persistenceFileURL(path: "Attachments/\(pathComponents[2...].joined(separator: "/"))")

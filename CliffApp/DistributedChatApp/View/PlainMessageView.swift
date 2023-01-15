@@ -1,6 +1,6 @@
 //
 //  PlainMessageView.swift
-//  DistributedChatApp
+//  CliffApp
 //
 //  Created by Fredrik on 1/23/21.
 //
