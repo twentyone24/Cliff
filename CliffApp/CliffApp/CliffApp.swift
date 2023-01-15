@@ -26,7 +26,7 @@ private class AppState {
     var subscriptions: [AnyCancellable] = []
     
     init() {
-//        LoggingSystem.bootstrap(LoggingOSLog.init)
+        LoggingSystem.bootstrap(LoggingOSLog.init)
         
         let settings = Settings()
         let profile = Profile()

@@ -102,7 +102,7 @@
 		67FF39B82974331E002EFDE1 /* PlainMessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlainMessageView.swift; sourceTree = "<group>"; };
 		67FF39B92974331E002EFDE1 /* MessageHistoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageHistoryView.swift; sourceTree = "<group>"; };
 		67FF39BA2974331E002EFDE1 /* QuickLookAttachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickLookAttachment.swift; sourceTree = "<group>"; };
-		67FF39D429743363002EFDE1 /* VoiceNoteAttachmentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VoiceNoteAttachmentView.swift; path = DistributedChatApp/Components/VoiceNoteAttachmentView.swift; sourceTree = SOURCE_ROOT; };
+		67FF39D429743363002EFDE1 /* VoiceNoteAttachmentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VoiceNoteAttachmentView.swift; path = CliffApp/Components/VoiceNoteAttachmentView.swift; sourceTree = SOURCE_ROOT; };
 		67FF39D7297433AE002EFDE1 /* UIViewControllerRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerRepresentable.swift; sourceTree = "<group>"; };
 		67FF39D8297433AE002EFDE1 /* ClosableStatusBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosableStatusBar.swift; sourceTree = "<group>"; };
 		67FF39D9297433AE002EFDE1 /* ChatBubbleShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatBubbleShape.swift; sourceTree = "<group>"; };
@@ -242,7 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				C7BC337F25B3C1D100989E95 /* DistributedChat */,
-				C7BC335025B3C00700989E95 /* DistributedChatApp */,
+				C7BC335025B3C00700989E95 /* CliffApp */,
 				C7BC334F25B3C00700989E95 /* Products */,
 				C7BC338825B3C2EE00989E95 /* Frameworks */,
 			);
@@ -256,7 +256,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C7BC335025B3C00700989E95 /* DistributedChatApp */ = {
+		C7BC335025B3C00700989E95 /* CliffApp */ = {
 			isa = PBXGroup;
 			children = (
 				67FF39ED297434E4002EFDE1 /* CliffApp.swift */,
@@ -272,7 +272,7 @@
 				C7BC335A25B3C00900989E95 /* Info.plist */,
 				C7BC335725B3C00900989E95 /* Preview Content */,
 			);
-			path = DistributedChatApp;
+			path = CliffApp;
 			sourceTree = "<group>";
 		};
 		C7BC335725B3C00900989E95 /* Preview Content */ = {
@@ -565,18 +565,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 21;
-				DEVELOPMENT_ASSET_PATHS = "\"DistributedChatApp/Preview Content\"";
+				CURRENT_PROJECT_VERSION = 24;
+				DEVELOPMENT_ASSET_PATHS = "\"CliffApp/Preview Content\"";
 				DEVELOPMENT_TEAM = U838J52YD8;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = DistributedChatApp/Info.plist;
+				INFOPLIST_FILE = CliffApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Cliff;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.21;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = twentyone24.Cliff.App;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -593,18 +594,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 21;
-				DEVELOPMENT_ASSET_PATHS = "\"DistributedChatApp/Preview Content\"";
+				CURRENT_PROJECT_VERSION = 24;
+				DEVELOPMENT_ASSET_PATHS = "\"CliffApp/Preview Content\"";
 				DEVELOPMENT_TEAM = U838J52YD8;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = DistributedChatApp/Info.plist;
+				INFOPLIST_FILE = CliffApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Cliff;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.21;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = twentyone24.Cliff.App;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
