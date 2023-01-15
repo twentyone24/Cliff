@@ -6,7 +6,7 @@
 //
 
 
-import DistributedChat
+import CliffTransportSDK
 import SwiftUI
 
 struct QuickLookAttachmentView<Content>: View where Content: View {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67CEFF4729743A570017C45C /* CliffTransportSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 67CEFF4629743A570017C45C /* CliffTransportSDK */; };
 		67FF3990297432D6002EFDE1 /* PersistenceUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FF3989297432D6002EFDE1 /* PersistenceUtils.swift */; };
 		67FF3991297432D6002EFDE1 /* CollectionUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FF398A297432D6002EFDE1 /* CollectionUtils.swift */; };
 		67FF3992297432D6002EFDE1 /* EnvironmentUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FF398B297432D6002EFDE1 /* EnvironmentUtils.swift */; };
@@ -60,13 +61,13 @@
 		C7AFC9B325BB52D500AF9526 /* CoreBluetoothTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AFC9B225BB52D500AF9526 /* CoreBluetoothTransport.swift */; };
 		C7BC335625B3C00900989E95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7BC335525B3C00900989E95 /* Assets.xcassets */; };
 		C7BC335925B3C00900989E95 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7BC335825B3C00900989E95 /* Preview Assets.xcassets */; };
-		C7BC338A25B3C2EE00989E95 /* DistributedChat in Frameworks */ = {isa = PBXBuildFile; productRef = C7BC338925B3C2EE00989E95 /* DistributedChat */; };
 		C7ED978A25C5CD28002ACC5A /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ED978925C5CD28002ACC5A /* AudioRecorder.swift */; };
 		C7ED97B025C5E705002ACC5A /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ED97AF25C5E705002ACC5A /* AudioPlayer.swift */; };
 		C7ED97C125C60055002ACC5A /* FDWaveformView in Frameworks */ = {isa = PBXBuildFile; productRef = C7ED97C025C60055002ACC5A /* FDWaveformView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		67CEFF4529743A110017C45C /* CliffTransportSDK */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = CliffTransportSDK; path = ../CliffTransportSDK; sourceTree = "<group>"; };
 		67FF3989297432D6002EFDE1 /* PersistenceUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceUtils.swift; sourceTree = "<group>"; };
 		67FF398A297432D6002EFDE1 /* CollectionUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionUtils.swift; sourceTree = "<group>"; };
 		67FF398B297432D6002EFDE1 /* EnvironmentUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentUtils.swift; sourceTree = "<group>"; };
@@ -121,7 +122,6 @@
 		C7BC335525B3C00900989E95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7BC335825B3C00900989E95 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C7BC335A25B3C00900989E95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C7BC337F25B3C1D100989E95 /* DistributedChat */ = {isa = PBXFileReference; lastKnownFileType = folder; name = DistributedChat; path = ../DistributedChat; sourceTree = "<group>"; };
 		C7ED978925C5CD28002ACC5A /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
 		C7ED97AF25C5E705002ACC5A /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,8 +131,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67CEFF4729743A570017C45C /* CliffTransportSDK in Frameworks */,
 				67FF39F1297435A7002EFDE1 /* LoggingOSLog in Frameworks */,
-				C7BC338A25B3C2EE00989E95 /* DistributedChat in Frameworks */,
 				C7ED97C125C60055002ACC5A /* FDWaveformView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,7 +241,7 @@
 		C7BC334525B3C00700989E95 = {
 			isa = PBXGroup;
 			children = (
-				C7BC337F25B3C1D100989E95 /* DistributedChat */,
+				67CEFF4529743A110017C45C /* CliffTransportSDK */,
 				C7BC335025B3C00700989E95 /* CliffApp */,
 				C7BC334F25B3C00700989E95 /* Products */,
 				C7BC338825B3C2EE00989E95 /* Frameworks */,
@@ -317,9 +317,9 @@
 			);
 			name = Cliff;
 			packageProductDependencies = (
-				C7BC338925B3C2EE00989E95 /* DistributedChat */,
 				C7ED97C025C60055002ACC5A /* FDWaveformView */,
 				67FF39F0297435A7002EFDE1 /* LoggingOSLog */,
+				67CEFF4629743A570017C45C /* CliffTransportSDK */,
 			);
 			productName = DistributedChatApp;
 			productReference = C7BC334E25B3C00700989E95 /* Cliff.app */;
@@ -660,16 +660,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		67CEFF4629743A570017C45C /* CliffTransportSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CliffTransportSDK;
+		};
 		67FF39F0297435A7002EFDE1 /* LoggingOSLog */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 67FF39EF297435A7002EFDE1 /* XCRemoteSwiftPackageReference "swift-log-oslog" */;
 			productName = LoggingOSLog;
 		};
 		C76545D925CE19E0004F14E8 /* DistributedChat */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = DistributedChat;
-		};
-		C7BC338925B3C2EE00989E95 /* DistributedChat */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = DistributedChat;
 		};

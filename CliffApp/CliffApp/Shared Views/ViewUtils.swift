@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import DistributedChat
+import CliffTransportSDK
 
 let iconSize: CGFloat = 24
 

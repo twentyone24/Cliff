@@ -6,7 +6,7 @@
 //
 
 import Combine
-import DistributedChat
+import CliffTransportSDK
 
 class Navigation: ObservableObject {
     @Published var activeChannel: ChatChannel?? = nil

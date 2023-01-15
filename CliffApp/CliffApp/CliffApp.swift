@@ -7,7 +7,7 @@
 
 import AVFoundation
 import Combine
-import DistributedChat
+import CliffTransportSDK
 import Dispatch
 import Logging
 import LoggingOSLog

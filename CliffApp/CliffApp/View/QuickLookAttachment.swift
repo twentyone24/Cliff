@@ -5,7 +5,7 @@
 //  Created by NAVEEN MADHAN on 4/1/22.
 //
 
-import DistributedChat
+import CliffTransportSDK
 import Foundation
 import Logging
 import QuickLook

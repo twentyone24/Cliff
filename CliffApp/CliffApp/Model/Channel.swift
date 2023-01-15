@@ -5,7 +5,7 @@
 //  Created by Fredrik on 1/22/21.
 //
 
-import DistributedChat
+import CliffTransportSDK
 
 struct Channel: Identifiable {
     let name: String?

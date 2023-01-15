@@ -8,7 +8,7 @@
 import CoreBluetooth
 import Combine
 import Dispatch
-import DistributedChat
+import CliffTransportSDK
 import Foundation
 import Logging
 

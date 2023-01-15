@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import DistributedChat
+import CliffTransportSDK
 
 struct PresenceView: View {
     let presence: ChatPresence
