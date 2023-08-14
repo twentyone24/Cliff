@@ -169,6 +169,7 @@
 		C7734CB025BCDEDF0057DF96 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				67FF39ED297434E4002EFDE1 /* CliffApp.swift */,
 				67FF398A297432D6002EFDE1 /* CollectionUtils.swift */,
 				67FF398F297432D6002EFDE1 /* DataUtils.swift */,
 				67FF398B297432D6002EFDE1 /* EnvironmentUtils.swift */,
@@ -259,7 +260,6 @@
 		C7BC335025B3C00700989E95 /* CliffApp */ = {
 			isa = PBXGroup;
 			children = (
-				67FF39ED297434E4002EFDE1 /* CliffApp.swift */,
 				67FF39D629743394002EFDE1 /* Shared Views */,
 				67FF39D32974334B002EFDE1 /* Components */,
 				C7734CB025BCDEDF0057DF96 /* Utils */,
@@ -565,20 +565,20 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 24;
+				CURRENT_PROJECT_VERSION = 25;
 				DEVELOPMENT_ASSET_PATHS = "\"CliffApp/Preview Content\"";
-				DEVELOPMENT_TEAM = U838J52YD8;
+				DEVELOPMENT_TEAM = 4W98S4U8XB;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CliffApp/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Cliff;
+				INFOPLIST_KEY_CFBundleDisplayName = "Cliff Chat";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = twentyone24.Cliff.App;
+				MARKETING_VERSION = 1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = twentyone24.CliffApp.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -594,20 +594,20 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 24;
+				CURRENT_PROJECT_VERSION = 25;
 				DEVELOPMENT_ASSET_PATHS = "\"CliffApp/Preview Content\"";
-				DEVELOPMENT_TEAM = U838J52YD8;
+				DEVELOPMENT_TEAM = 4W98S4U8XB;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CliffApp/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Cliff;
+				INFOPLIST_KEY_CFBundleDisplayName = "Cliff Chat";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = twentyone24.Cliff.App;
+				MARKETING_VERSION = 1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = twentyone24.CliffApp.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
